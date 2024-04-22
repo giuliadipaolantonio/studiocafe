@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> La nostra catena </title>
+</head>
+
+  <!-- CSS -->
+  <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+
+  <!-- JS -->
+  <script defer src="js/script.js"></script>
+  <script src="bootstrap/bootstrap.bundle.min.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.7.0.min.js"
+  integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+  crossorigin="anonymous"></script>
+  
+  <!-- Custom styles for this template -->
+  <link href="css/contatti.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3 ">
+  <div class="container ">
+
+    <a class="navbar-brand" href="#">
+      <img src="img/coffee-cup.png" alt="" width="40" class="d-inline-block align-top">
+    </a>
+
+    <button 
+      class="navbar-toggler"
+      type="button" 
+      data-bs-toggle="collapse" 
+      data-bs-target="#navbarNav" 
+      aria-controls="navbarNav" 
+      aria-expanded="false" 
+      aria-label="Toggle navigation"
+    > Menu
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse ul-bg" id="navbarNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"> <a class="nav-link active"  aria-current="page" href="index.html"> Home </a> </li>
+        <li class="nav-item dropdown"> 
+          <a class="nav-link dropdown-toggle" href="#services" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+            Servizi 
+          </a> 
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="prenotazione.html">Prenota un tavolo</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="panino.html">Pranzo al sacco</a></li>
+            <li><a class="dropdown-item" href="frullato.html">Ordina un frullato</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"> <a class="nav-link" href="menu.html"> Menu </a> </li>
+        <li class="nav-item"> <a class="nav-link" href="prenotazione.html"> Prenota </a> </li>
+        <li class="nav-item"> <a class="nav-link" href="contatti.html"> Contatti </a> </li>
+      </ul>
+      <form class="d-flex">
+        <div class="me-2 navbar-text"> Sei già iscritto? 
+        <a href="login.html" class="btn btn-sm btn-primary btn-accedi" style="margin-left: 10px;"> Accedi </a>
+      </form>
+    </div>
+
+  </div>
+</nav>
+</header>
+
+<main>
+
+
+<!-- Carusel -->
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/roma.png" class="d-block w-100" style="filter: blur(1px) brightness(0.65);">>
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>Roma</h1>
+            <p>La nostra prima sede aprì nel Novembre del 2017 a Roma, città universitaria per eccellenza!</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/milano.jpeg" class="d-block w-100" style="filter: blur(5px) brightness(0.59);">
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>Milano</h1>
+            <p>La seconda apertura nella metropoli moderna che guarda al futuro!</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/bologna copia.jpg" class="d-block w-100" style="filter: blur(5px) brightness(0.53);">
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>Bologna</h1>
+            <p>Città di cultura, dove i giovani non mancano mai!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Marketing -->
+  <div class="contatti">
+    <div class="text-center">
+    <img src="img/304765160_497201455744623_6956328345228996705_n 2.png" class="img-fluid" width=350px>
+    </div>
+    <!-- Three columns of text below the carousel -->
+    <div class="row g-4">
+      <div class="col-md-6 text-center">
+        <img src="img/man.png" class="rounded-circle" width="140" height="140">
+        <h2 class="subtitle">Filippo Vernole</h2>
+        <h5> Founder </h5>
+        <p class="contattifilippo">
+          <b>matricola:</b> 1933211 <br>
+          <b>email:</b> vernole.1933211@studenti.uniroma1.it <br>
+          <b>cell:</b> +39 333 3333333
+        </p>
+        <p><a class="btn btn-light" id="btnfilippo"> CONTATTI &raquo;</a></p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="img/woman.png" class="rounded-circle" width="140" height="140">
+        <h2 class="subtitle">Giulia Di Paolantonio</h2>
+        <h5> Founder </h5>
+        <p class="contattigiulia">
+          <b>matricola:</b> 1953843 <br>
+          <b>email:</b> dipaolantonio.1953843@studenti.uniroma1.it <br>
+          <b>cell:</b> +39 333 3333333
+        </p>
+        <p><a class="btn btn-light" id="btngiulia"> CONTATTI &raquo;</a></p>
+      </div>
+    </div>
+  </div>  
+
+  <!-- Featurette -->
+
+  <div class="informazioni">
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading fw-normal lh-1">Goditi uno Special-Coffee.</h2>
+      <p class="lead">Proponiamo una vasta scelta di particolari caffè utilizzando sempre prodotti freschi e di stagione. Oltre ai più stravaganti 
+        il nostro menù offre anche caffè più semplici che seguono la tradizione italiana.</p>
+    </div>
+    <div class="col-md-5">
+        <img src="img/special-coffee.jpg" class="featurette-image img-fluid mx-auto" width="500" height="500" role="img" reserveAspectRatio="xMidYMid slice" focusable="false">
+    </div>
+  </div>
+  </div>
+
+  <div class="informazioni" style="background-color: #f8f8f7;">
+  <div class="row featurette">
+    <div class="col-md-7 order-md-2">
+      <h2 class="featurette-heading fw-normal lh-1">Prenota e studia in tranquillità.</h2>
+      <p class="lead">Prenotando una postazione avrai la possibilità di usufruire dei nostri servizi: 
+        computer fisso di nuova generazione, connessione Wi-Fi superveloce e prese di ricarica per qualsiasi dispositivo</li></p>
+        </ul>
+    </div>
+    <div class="col-md-5 order-md-1">
+        <img src="img/studio.jpg" class="featurette-image img-fluid mx-auto" width="500" height="500" role="img" reserveAspectRatio="xMidYMid slice" focusable="false">
+    </div>
+  </div>
+  </div>
+
+  <div class="informazioni" style="background-color: #ffffff;">
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading fw-normal lh-1">Vieni a trovarci.</h2>
+      <p class="lead">
+        <b>Roma</b>: Piazzale delle Province, 12; Tel: 06 81000000 <br>
+        <b>Milano</b>: Via Santa Valeria, 3; Tel : 02 32000000 <br>
+        <b>Bologna</b>: Via delle belle arti, 32; Tel: 05 12000000</p>
+    </div>
+    <div class="col-md-5">
+      <img src="img/libri.jpg" class="featurette-image img-fluid mx-auto" width="500" height="500" role="img" reserveAspectRatio="xMidYMid slice" focusable="false">
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+
+<!-- Footer -->
+<footer class="py-1 py-md-5 mt-5" id="copyright">
+    <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
+      <div class="row">
+        <div class="mb-3">
+          <div class="d-inline-flex align-items-center mb-2 text-body-emphasis">
+            <span class="fs-5">Studio Café</span>
+          </div>
+          <div class="mb-2 small">&copy; Linguaggi e Tecnologie Web 2022/2023</div>
+          <p class="float-end"><a href="#">Back to top</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</main>
+
+
+  <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <script>
+    
+    $(document).ready(function () {
+      $("#btnfilippo").on("click", () => {
+        $("p.contattifilippo").show( 1000 );
+        $("#btnfilippo").hide( 1000 );
+      })
+
+      $("#btngiulia").on("click", () => {
+        $("p.contattigiulia").show( 1000 );
+        $("#btngiulia").hide( 1000 );
+      })
+
+      $("h2").on("mouseenter", () => {
+        $("h2").addClass("change");
+      })
+
+      $("h2").on("mouseleave", () => {
+        $("h2").removeClass("change");
+      })
+    })
+
+  </script>
+    
+</body>
+</html>

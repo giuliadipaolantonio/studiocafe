@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studio Café</title>
+
+    <!-- CSS Bootstrap & Personale-->
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  
+    <!-- JS Bootstrap & JQuery -->
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    
+    <script defer src="js/script.js"></script>
+
+</head>
+
+<body>
+  <!-- TOP PAGE -->
+<!-- Header -->
+<header>
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3 ">
+  <div class="container ">
+
+    <a class="navbar-brand" href="#">
+      <img src="img/coffee-cup.png" alt="" width="40" class="d-inline-block align-top">
+    </a>
+
+    <button 
+      class="navbar-toggler"
+      type="button" 
+      data-bs-toggle="collapse" 
+      data-bs-target="#navbarNav" 
+      aria-controls="navbarNav" 
+      aria-expanded="false" 
+      aria-label="Toggle navigation"
+    > Menu
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse ul-bg" id="navbarNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"> <a class="nav-link active"  aria-current="page" href="index.html"> Home </a> </li>
+        <li class="nav-item dropdown"> 
+          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+            Servizi 
+          </a> 
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="prenotazione.html">Prenota un tavolo</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="panino.html">Pranzo al sacco</a></li>
+            <li><a class="dropdown-item" href="frullato.html">Ordina un frullato</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"> <a class="nav-link" href="menu.html"> Menu </a> </li>
+        <li class="nav-item"> <a class="nav-link" href="prenotazione.html"> Prenota </a> </li>
+        <li class="nav-item"> <a class="nav-link" href="contatti.html"> Contatti </a> </li>
+      </ul>
+      <form class="d-flex">
+        <div class="me-2 navbar-text"> Sei già iscritto? 
+        <a href="login.html" class="btn btn-sm btn-primary btn-accedi" style="margin-left: 10px;"> Accedi </a>
+      </form>
+    </div>
+
+  </div>
+</nav>
+</header>
+    
+  <!-- Banner Image  -->
+  <div class="banner-image d-flex vh-100 text-center">
+    <div class="container d-flex w-100 h-100 p-3 mx-auto flex-column justify-content-center">
+      <div class="px-3">
+        <h2 class="intro-text" id="banner-text"> 
+          Il posto perfetto <br> 
+          per coinciliare il momento di 
+          <div id="blue">studio</div> 
+          e quello della pausa <br>
+          <img src="img/cafe.png" id="café" width="45px">
+        </h2>
+        <br>
+        <a class="cta" href="prenotazione.html">
+          <span> Prenota </span>
+          <svg viewBox="0 0 13 10" height="10px" width="15px">
+            <path d="M1,5 L11,5"></path>
+            <polyline points="8 1 12 5 8 9"></polyline>
+          </svg>
+        </a>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CENTER PAGE -->
+
+  <div class="center">
+
+    <!-- Services -->
+
+    <section id="services" class= "d-flex justify-content-center align-items-center">
+      <div class="container text-center">
+        <img class="titolo" src="img/304765160_497201455744623_6956328345228996705_n 2.png" width="300px"></img>
+        <div class="intro-text"> 
+          <div class="row g-4 services-list">
+            <div class="col-lg col-md-4">
+                <div class="service">
+                  <a href="menu.html" onmouseover="return mostra(scritta1)" onmouseleave="return nascondi(scritta1)">
+                    <img class="mx-auto" src="img/icone/caffettiera .png">
+                    <h4>caffettiera</h4>
+                  </a>
+                  <p class="text-muted" id="scritta1" style="visibility:hidden">Caffè? Ne abbiamo di tutti i tipi che vuoi: decaffeniato, orzo, ginseng... Siediti comodo e ricarica le energie mentre prepari i tuoi esami!</p>
+                </div>
+            </div>
+
+            <div class="col-lg col-md-4">
+              <div class="service">
+                <a href="menu.html" onmouseover="return mostra(scritta2)" onmouseleave="return nascondi(scritta2)">
+                  <img class="mx-auto" src="img/icone/pasticceria.png" alt="">
+                  <h4>pasticceria</h4>
+                </a>
+                <p class="text-muted" id="scritta2" style="visibility:hidden">Cornetti di ogni genere e con ogni farcitura, e tanto altro. Da noi potrai trovare ogni genere di leccornia per soddisfare la tua golosità</p>
+              </div>
+          </div>
+
+          <div class="col-lg col-md-4">
+            <div class="service">
+              <a href="menu.html" onmouseover="return mostra(scritta3)" onmouseleave="return nascondi(scritta3)">
+                <img  class="mx-auto" src="img/icone/gelateria.png" alt="">
+                <h4>gelateria</h4>
+              </a>
+              <p class="text-muted" id="scritta3" style="visibility:hidden">Il nostro gelato artigianale è frutto di studio e passione, ed è l'ideale per ritrovare un po' di freschezza durante la sessione estiva </p>
+            </div>
+        </div>
+
+            <div class="col-lg col-md">
+              <div class="service">
+                <a href="panino.html" onmouseover="return mostra(scritta4)" onmouseleave="return nascondi(scritta4)">
+                  <img  class="mx-auto" src="img/icone/panini.png" alt="">
+                  <h4>panineria</h4>
+                </a>
+                <p class="text-muted" id="scritta4" style="visibility:hidden"> Panini farciti come vuoi tu! Ottimi per un pranzo veloce e perfetti per essere portati ovunque tu voglia. Scopri il nostro servizio d'asporto </p>
+              </div>
+            </div>
+
+            <div class="col-lg col-md">
+              <div class="service">
+                <a href="frullato.html" onmouseover="return mostra(scritta5)"  onmouseleave="return nascondi(scritta5)">
+                  <img  class="mx-auto " src="img/icone/bibite.png" alt="">
+                  <h4>bevande</h4>
+                </a>
+                <p class="text-muted" id="scritta5" style="visibility:hidden">Non c'è niente di più rinfrescante dell'acqua, ma se non ti basta abbiamo succhi, spremute e non solo! Scopri i nostri frullati personalizzati</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Studiare -->
+    <section id="studiare" class= "d-flex justify-content-center align-items-center">
+      <div class="container text-center">
+        <div class="row g-5 row-studiare">
+          <div class="col-lg-7 col-12">
+            <div class="studiare-titolo">Studiare da noi</div>
+            <p class="studiare-testo">
+              Studio Café mette a disposizione per tutti gli <b>studenti</b> dei tavoli in un'area dove poter studiare e consumare i nostri prodotti in tranquillità. 
+              Nell'area studio è presente il servizio <i><b>Wi-Fi</b></i> e, per chi lo richiede, delle postazioni <b>computer</b>. 
+              Inoltre è presente una piccola <i>biblioteca</i> che può essere consultata gratuitamente durante la vostra permanenza.
+              Il servizio di area studio è accessibile gratuitamente a chiunque ne abbia necessità, considerata l'affluenza è caldamente consigliato
+              <u>prenotare un tavolo</u> sul sito (è possibile effettuare anche prenotazioni di gruppo).
+            </p>
+            <a class="bottone btn btn-lg btn-light" href="prenotazione.html">
+              <div class="testo-bottone">Prenota un tavolo</div></a>
+          </div>
+          <div class="col-lg-1"></div>
+          <div class="col-lg-4 col-12">
+            <picture>
+              <source media="(max-width: 1199px)" srcset="img/cafestudio-cropped.jpg">
+            <img src="img/cafestudio.jpg" style="width: 100%">
+          </picture>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Asporto -->
+    <section id="asporto" class= "d-flex justify-content-center align-items-center">
+      <div class="container text-center">
+        <div class="titolo"> Scopri i nostri servizi d'asporto</div>
+
+        <div class="row g-5">
+          <div class="col-md-6">
+            <div class="card">
+              <img src="img/frullato.jpg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Ordina un frullato</h5>
+                <p class="card-text">Frullati e non solo... Personalizza la tua bevanda di frutta scegliendo fino ad un massimo di tre gusti e ritirala al bancone quando vuoi.</p>
+                <a href="frullato.html" class="btn btn-light">Ordina ora</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <img src="img/panini.jpg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Pranzo al sacco</h5>
+                <p class="card-text">Cosa c'è di più semplice di un buon panino? Riempilo con l'affettato e il formaggio che preferisci e ritiralo quando vuoi per la tua pausa pranzo.</p>
+                <a href="panino.html" class="btn btn-light">Ordina ora</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="py-1 py-md-5 mt-5" id="copyright">
+    <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
+      <div class="row">
+        <div class="mb-3">
+          <div class="d-inline-flex align-items-center mb-2 text-body-emphasis">
+            <span class="fs-5">Studio Café</span>
+          </div>
+          <div class="mb-2 small">&copy; Linguaggi e Tecnologie Web 2022/2023</div>
+          <p class="float-end"><a href="#">Back to top</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+</body>
+</html>

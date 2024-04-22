@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prenotazione</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/form.css">
+
+    <!-- JS -->
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <div class="page w-auto h-auto" id="home">
+    
+    <div class="card text-center mb-3">
+        <div class="card-header">
+        <a class="back-home" href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+            </svg>
+            Torna alla home
+        </a>
+        </div>
+        <div class="card-body">
+            <form name="prenotazione" method="post" action="php/prenotazione.php">
+                <h2 class="card-title"> Prenota ora!</h2>
+                <h6 class="card-subsub">Prenota la tua postazione <br>
+                    e studia in tranquillità! <br>
+                    Il nostro servizio studio è gratuito</h6>
+                <br>
+                <h5> I tuoi dati</h5>
+                <hr style="margin-top: 2px; margin-bottom: 20px;">
+                <div class="card-subsub" id="erroreDati" style="color: rgb(149, 10, 10); font-size: 14px; text-align: left;"></div>
+                <div class="row g-2">
+                    <div class="col-sm-6 col-12">
+                        <div class = "form-floating">
+                            <input type="text" class="form-control" name="inputNome" id="Name"
+                            placeholder="Nome">
+                            <label for="Name">Nome</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-12">
+                        <div class = "form-floating">
+                            <input type="text" class="form-control" name="inputCognome" id="Surname"
+                            placeholder="Cognome">
+                            <label for="Surname">Cognome</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-subsub" id="erroreContatti" style="color: rgb(149, 10, 10); font-size: 14px; text-align: left;"></div>
+                <div class="row g-2">
+                    <div class="col-sm-6 col-12">
+                        <div class = "form-floating">
+                            <input type="email" class="form-control" name="inputEmail" id="Email"
+                            placeholder="Email">
+                            <label for="Email">Email</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-12">
+                        <div class = "form-floating">
+                            <input type="tel" class="form-control" name="inputTel" id="Tel"
+                            placeholder="Telefono">
+                            <label for="Tel">Telefono</label>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <h5> Dati di prenotazione</h5>
+                <hr style="margin-top: 2px; margin-bottom: 20px;">
+                <div class="card-subsub" id="errorePrenotazione" style="color: rgb(149, 10, 10); font-size: 14px; text-align: left;"></div>
+                <div class="row g-2">
+                    <div class="col-6">
+                        <div class = "form-floating">
+                            <input type="date" class="form-control" name="inputData" id="Date"
+                            placeholder="Data di prenotazione" >
+                            <label for="Date">Data</label>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class = "form-floating">
+                            <input type="time" class="form-control" name="inputOra" id="Time"
+                            placeholder="Orario di prenotazione">
+                            <label for="Time">Orario</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-12">
+                        <div class = "form-floating">
+                            <input type="number" class="form-control" name="inputPersone" id="Persone"
+                            placeholder="Numero di persone" value="1">
+                            <label for="Persone">Numero di persone</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-12">
+                        <div class = "form-floating">
+                            <select class="form-select" name="inputSede" id="Sede">
+                                <option value="niente" selected>Seleziona una sede</option>
+                                <option value="Roma">Roma - Piazzale delle Province, 12</option>
+                                <option value="Bologna">Bologna - Via delle belle arti, 32</option>
+                                <option value="Milano">Milano - Via Santa Valeria, 3</option>
+                            </select>
+                            <label for="Sede">Sede</label>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <input class="btn btn-lg btn-light" type="submit" value="Prenota">
+            </form>
+        </div>
+        <div class="card-footer text-muted">
+            Il nostro staff elaborerà quanto prima la sua richiesta e le risponderà entro brevissimo tempo.
+          </div>
+    </div>
+  </div>
+
+  <script src="js/prenota.js"></script>
+
+</body>
+</html>

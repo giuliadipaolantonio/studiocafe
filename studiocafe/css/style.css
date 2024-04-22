@@ -1,0 +1,363 @@
+/* PAGE */
+
+@font-face {
+  font-family: 'Richard';
+  src: url(../font/Richard\ Samuels.otf) format('truetype');;
+}
+
+body{
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: .065em;;
+  -webkit-font-smoothing: antialiased;
+  color: #404040;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: .1em;
+  color: #02626e;
+  font-family: 'Richard';
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,h2,h3,h4,h5 {
+  margin: 10px 0 5px 0;
+  line-height: 1.3em;
+  text-transform: uppercase;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* TOP PAGE */
+
+/* Navbar */
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px;
+  position: fixed;
+  width: 100%;
+  transition: all 0.5s;
+  color: white;
+  margin-top: 10px;
+}
+
+.nav-item .nav-link {
+  letter-spacing: .065em;
+  color: white;
+  vertical-align: middle;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.5s;
+  margin: 0px 12px 0px 12px;
+}
+
+.nav-item .nav-link:hover{
+  color: #008496;
+}
+
+.navbar-text{
+  letter-spacing: .065em;
+  vertical-align: middle;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 15px;
+  color: gainsboro;
+  transition: all 0.5s;
+  margin: 0px 12px 0px 12px;
+}
+
+.dropdown-item{
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 13px;
+}
+
+.navbar .btn{
+  text-transform: uppercase;
+  letter-spacing: .065em;
+  vertical-align: middle;
+  font-weight: 500;
+  font-size: 12px;
+  color: white;
+  margin: 0px 12px 0px 12px;
+}
+
+.navbar-toggler {
+  font-size: 13px;
+  right: 0;
+  padding: 13px;
+  text-transform: uppercase;
+  color: #f3f2ee;
+  border: 0;
+  background-color: #02626e;
+}
+
+@media(max-width: 992px){
+  .ul-bg {
+  background-color: #02626e;
+  border-radius: 10px;
+  margin:10px;
+  padding: 10px;
+  }
+}
+
+.navbar-scrolled{
+  background-color: #02626e;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.20);
+  margin-top: 0;
+}
+
+.navbar-scrolled .nav-item .nav-link {
+  color:#f3f2ee;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.navbar-scrolled .nav-item .nav-link:hover {
+  color:#222220;
+}
+
+.navbar-scrolled .navbar-text{
+  color:#eae9e4;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* Banner Image */
+
+.banner-image {
+  background-image: url(../img/sfondo-1.jpg);
+  background-size: cover;
+}
+
+.banner-image .container{
+  padding: 100px 15px;
+}
+
+.banner-image .intro-text {
+    font-size: 37px;
+    color: white;
+    padding-top: 30px;
+    font-family: 'Richard';
+}
+
+.banner-image .intro-text .change {
+  font-size: 59px;
+  color: #02626e;
+  text-transform: capitalize;
+  text-shadow: 1px 2px 9px #222220;
+  letter-spacing: 0;
+  padding: 10px;
+  transition: all 2.5s;
+}
+
+.banner-image #café{
+  transition: all 2.5s;
+  padding: 5px;
+}
+
+/*bottone*/
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+ }
+ 
+ .cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #eae9e4;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+ }
+ 
+ .cta span {
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  font-weight: 600;
+  font-size: 15px;
+  color: #5b4b3e;
+ }
+ 
+ .cta svg {
+  position: relative;
+  top: 0;
+  margin-bottom: 3px;
+  margin-left: 7px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #5b4b3e;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+ }
+ 
+ .cta:hover:before {
+  width: 100%;
+  background: #02626e;
+  cursor: pointer;
+ }
+ 
+ .cta:hover svg {
+  transform: translateX(0);
+  cursor: pointer;
+  stroke: #eae9e4;
+ }
+ 
+ .cta:hover span {
+  cursor: pointer;
+  color: #eae9e4;
+ }
+ 
+ .cta:active {
+  transform: scale(0.95);
+   cursor: pointer;
+ }
+
+/* Servizi */
+
+#services{
+    display: flex;
+    text-align: center;
+    background-color: #f3f2ee;
+    background-position: center;
+}
+
+#services .intro-text {
+  padding-top: 30px;
+  margin-bottom: 35px;
+  -webkit-font-smoothing: antialiased;
+}
+
+#services .titolo {
+  padding-top: 60px;
+  font-size: 40px;
+}
+
+.service {
+  margin-bottom: 50px;
+  text-align: center;
+  transition: all 0.6s;
+}
+
+.service img {
+  margin: 10px;
+  width: 130px;
+  height: 130px;
+}
+
+.service img:hover{
+  filter: brightness(0.8);
+}
+
+/* Studiare */
+
+#studiare{
+  background-color: #d3d0c5;
+}
+
+#studiare .container{
+  margin: 20px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+#studiare .studiare-titolo {
+  text-align: justify;
+  font-size: 50px;
+  font-weight: 400;
+  letter-spacing: .03em;
+  color: #ffffff;
+  text-shadow: 1px 2px 3px #404040;
+  font-family: 'Richard';
+  -webkit-font-smoothing: antialiased;
+}
+
+#studiare .studiare-testo{
+  text-align: justify;
+}
+
+#studiare img {
+  border: 5px solid #404040;
+}
+
+#studiare a {
+  margin: 0 10px;
+  padding: 4px 10px;
+}
+
+.testo-bottone {
+  color: #5b4b3e;
+  text-transform: uppercase;
+  letter-spacing: .090em;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 2px;
+  margin: 1px;
+}
+
+/* Asporto */
+#asporto .container{
+  padding-top: 80px;
+  padding-bottom: 70px;
+}
+
+#asporto .titolo {
+  font-size: 50px;
+  font-weight: 400;
+  letter-spacing: .03em;
+  color: #02626e;
+  font-family: 'Richard';
+  -webkit-font-smoothing: antialiased;
+}
+
+#asporto .card{
+  margin-top: 35px;
+}
+
+#asporto .card .card-body .card-title{
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: .1em;
+  color: #02626e;
+  font-family: 'Richard';
+  -webkit-font-smoothing: antialiased;
+}
+
+#asporto .card .card-body .btn{
+  color: #5b4b3e;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 8px 22px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 12px 12px 12px 12px;
+}
+
+
+/* BOTTOM PAGE */
+
+#copyright {
+    background-color: #f3f2ee;
+}

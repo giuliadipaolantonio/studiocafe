@@ -1,0 +1,252 @@
+/* PAGE */
+
+@font-face {
+  font-family: 'Richard';
+  src: url(../font/Richard\ Samuels.otf) format('truetype');;
+}
+
+a{
+  text-decoration: none;
+}
+
+body {
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: .065em;;
+    -webkit-font-smoothing: antialiased;
+    color: #404040;
+  }
+
+/* Navbar */
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px;
+  position: fixed;
+  width: 100%;
+  transition: all 0.5s;
+  color: white;
+  margin-top: 10px;
+}
+
+.nav-item .nav-link {
+  letter-spacing: .065em;
+  color: white;
+  vertical-align: middle;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.5s;
+  margin: 0px 12px 0px 12px;
+}
+
+.nav-item .nav-link:hover{
+  color: #008496;
+}
+
+.navbar-text{
+  letter-spacing: .065em;
+  vertical-align: middle;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 15px;
+  color: gainsboro;
+  transition: all 0.5s;
+  margin: 0px 12px 0px 12px;
+}
+
+.dropdown-item{
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 13px;
+}
+
+.navbar .btn{
+  text-transform: uppercase;
+  letter-spacing: .065em;
+  vertical-align: middle;
+  font-weight: 500;
+  font-size: 12px;
+  color: white;
+  margin: 0px 12px 0px 12px;
+}
+
+.navbar-toggler {
+  font-size: 13px;
+  right: 0;
+  padding: 13px;
+  text-transform: uppercase;
+  color: #f3f2ee;
+  border: 0;
+  background-color: #02626e;
+}
+
+@media(max-width: 992px){
+  .ul-bg {
+  background-color: #02626e;
+  border-radius: 10px;
+  margin:10px;
+  padding: 10px;
+  }
+}
+
+.navbar-scrolled{
+  background-color: #02626e;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.20);
+  margin-top: 0;
+}
+
+.navbar-scrolled .nav-item .nav-link {
+  color:#f3f2ee;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.navbar-scrolled .nav-item .nav-link:hover {
+  color:#222220;
+}
+
+.navbar-scrolled .navbar-text{
+  color:#eae9e4;
+  font-size: 14px;
+  font-weight: 400;
+}
+  
+/* Carousel */
+
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+  }
+  
+  .carousel-item {
+    height: 32rem;
+  }
+  
+  .carousel-item img {
+    min-height: 512px;
+    
+  }
+
+  .carousel h1{
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    vertical-align: middle;
+    font-weight: 700;
+    font-size: 40px;
+    color: #cfc4ba;
+    text-shadow: 1px 1px 3px #1c1916;
+  }
+
+  .carousel p{
+    text-shadow: 1px 1px 3px #222220;
+    color: #d7d6d1;
+  }
+  
+/* Contatti */
+  .contatti{
+    padding: 50px 90px 85px 90px;
+    background-color: #fefefe;
+  }
+
+  .contatti .col-md-6 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .contatti .col-md-6 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+  }
+
+  .contatti .col-md-6 h2.subtitle {
+    text-transform: uppercase;
+    margin-top: 1rem;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: .1em;
+    color: #02626e;
+    font-family: 'Richard';
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .contatti h5{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: .1em;
+  }
+
+  .contatti img.rounded-circle{
+    transition: all 0.6s ease;
+    transform-style: preserve-3d;
+  }
+
+
+  .contatti img.rounded-circle:hover{
+    transform: rotateY(180deg);
+  }
+
+  #btnfilippo, #btngiulia {
+    color: #5b4b3e;
+    text-transform: uppercase;
+    letter-spacing: .090em;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 5px 10px;
+    background-color: #eae9e5;
+    border: 1px solid #e0e0dc;
+  }
+  
+  #btnfilippo:hover, #btngiulia:hover{
+    background-color: #d0d0cc;
+    border: 1px solid #d6d6d3;
+  }
+  
+  /* Informazioni */
+  .informazioni{
+    padding: 90px 100px 90px 100px;
+    background-color: #eae9e5  }
+
+  .featurette-divider {
+    margin: 5rem 0;
+  }
+  
+  .featurette-heading {
+    letter-spacing: -.05rem;
+    font-family: 'Richard';
+    transition: all 0.5s ease;
+  }
+
+  .change{
+    color: #02626e;
+    letter-spacing: -.09rem;
+  }
+  
+  
+  /* Responsivness */
+  
+  @media (min-width: 40em) {
+    .carousel-caption p {
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+  
+    .featurette-heading {
+      font-size: 50px;
+    }
+  }
+  
+  @media (min-width: 62em) {
+    .featurette-heading {
+      margin-top: 7rem;
+    }
+  }
+
+  /* Footer */
+
+  #copyright {
+    background-color: #f3f2ee;
+}

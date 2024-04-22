@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il nostro menu</title>
+      <!-- CSS Bootstrap & Personale-->
+      <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+      <link rel="stylesheet" href="css/menu.css">    
+
+      <!-- JS Bootstrap & JQuery -->
+      <script src="bootstrap/bootstrap.bundle.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+      <script src="js/script.js"></script>
+
+</head>
+<body>
+  <main>
+    <!-- Header -->
+    <header>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3 ">
+      <div class="container ">
+    
+        <a class="navbar-brand" href="#">
+          <img src="img/coffee-cup.png" alt="" width="40" class="d-inline-block align-top">
+        </a>
+    
+        <button 
+          class="navbar-toggler"
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#navbarNav" 
+          aria-controls="navbarNav" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation"
+        > Menu
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse ul-bg" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"> <a class="nav-link active"  aria-current="page" href="index.html"> Home </a> </li>
+            <li class="nav-item dropdown"> 
+              <a class="nav-link dropdown-toggle" href="#services" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+                Servizi 
+              </a> 
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="prenotazione.html">Prenota un tavolo</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="panino.html">Pranzo al sacco</a></li>
+                <li><a class="dropdown-item" href="frullato.html">Ordina un frullato</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"> <a class="nav-link" href="menu.html"> Menu </a> </li>
+            <li class="nav-item"> <a class="nav-link" href="prenotazione.html"> Prenota </a> </li>
+            <li class="nav-item"> <a class="nav-link" href="contatti.html"> Contatti </a> </li>
+          </ul>
+          <form class="d-flex">
+            <div class="me-2 navbar-text"> Sei già iscritto? 
+            <a href="login.html" class="btn btn-sm btn-primary btn-accedi" style="margin-left: 10px;"> Accedi </a>
+          </form>
+        </div>
+    
+      </div>
+    </nav>
+    </header>
+
+        <div class="container mt-2 py-5">
+            <div class="mt-5 mb-4 rounded-5">
+              <div class="container-fluid p-5 text-center">
+                <h1 class="piccolo">We are Green-friendly!</h1>
+                <p>
+                  La lotta al cambiamento climatico parte da ognuno di noi:<br>
+                  Da parte nostra utilizziamo solamente prodotti di stagione a kilometro zero, 
+                  ciò ci permette anche di avere frutta e verdura sempre
+                  fresca e di ottima qualità. <br>
+                  Il caffé viene necessariamente importato, ma abbiamo scelto come nostro distributore un'azienda che ha come priorità l'ecosostenibilità.
+                </p>
+                <p>
+                  Scopri anche il nostro servizio d'asporto: <br>
+                  <a class="btn btn-light" href="frullato.html"> ordina un frullato </a>
+                  <a class="btn btn-light" href="panino.html"> pranzo al sacco </a>
+                </p>
+              </div>
+            </div>
+      
+            <div class="row g-4 align-items-md-stretch">
+              <div class="col-lg-4">
+                <div class="h-100 p-5 rounded-5 text-center">
+                  <img src="img/icone/caffettiera .png" width="80px" style="margin: 0; margin-bottom: 20px;">
+                    <h2>Caffetteria</h2>
+                    <p>
+                    Espresso...........1.10$ <br>
+                    Cappuccino.........1.50$ <br> 
+                    Americano..........2.20$ <br>
+                    Orzo...............1.30$ <br>
+                    Ginseng............1.40$ <br>
+                    <br>
+                    <b>Special-Coffee:</b> <br>
+                    Piccolo...........4.50$ <br>
+                    Medio.............5.00$ <br>
+                    Grande............6.00$
+                </p>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="h-100 p-5 rounded-5 text-center">
+                  <img src="img/icone/pasticceria.png" width="80px" style="margin: 0; margin-bottom: 20px;">
+                    <h2>Pasticceria</h2>
+                    <p>
+                    Muffin...........1.10$ <br>
+                    Waffle...........2.80$ <br>
+                    Pancakes.........2.50$ <br> 
+                    Fagottino........1.40$ <br>
+                    <br>
+                    <b>Cornetti:</b> <br>
+                    Vuoto............1.20$ <br>
+                    Integrale........1.50$ <br>
+                    Ripeno...........2.00$ <br>
+                    (Nutella, Marmellata, Crema, <br>
+                    Cioccolato bianco, Pistacchio)
+                </p>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="h-100 p-5 rounded-5 text-center">
+                  <img src="img/icone/gelateria.png" width="80px" style="margin: 0; margin-bottom: 20px;">
+                    <h2>Gelateria</h2>
+                    <p>
+                    Piccolo.........2.60$ <br>
+                    Medio...........3.40$ <br>
+                    Grande..........4.80$ <br> 
+                    Vaschetta.......8.50$ <br>
+                    Frappè..........3.00$ <br>
+                    <br>
+                    <b>Yogurt:</b> <br>
+                    Piccolo............2.10$ <br>
+                    Medio..............2.80$ <br>
+                    Grande.............3.50$
+                    </p>
+                </div>
+              </div>
+            </div>
+
+        </div>
+
+      
+    <!-- Footer -->
+    <footer class="py-1 py-md-5 mt-5" id="copyright">
+      <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
+        <div class="row">
+          <div class="mb-3">
+            <div class="d-inline-flex align-items-center mb-2 text-body-emphasis">
+            <span class="fs-5">Studio Café</span>
+          </div>
+          <div class="mb-2 small">&copy; Linguaggi e Tecnologie Web 2022/2023</div>
+          <p class="float-end"><a href="#">Back to top</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  </main>    
+</body>
+</html>

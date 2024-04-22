@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'Richard';
+    src: url(../font/Richard\ Samuels.otf) format('truetype');;
+}
+
+/* {
+    box-sizing: border-box;
+}*/
+
+body {
+    background-image: url(../img/sfondo-1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    overscroll-behavior: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+#home {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh; 
+    padding-top:50px; 
+    padding-right:25px; 
+    padding-left: 25px; 
+    padding-bottom: 50px;
+}
+
+#home .card{
+    max-width: 800px;
+}
+
+#home .card .card-header{
+    text-align: left;
+    background-color: #f3f2ee;
+}
+
+#home .card .card-header .back-home{
+    color: #404040;
+    font-weight: 400;
+    letter-spacing: .025em;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+
+#home .card .card-body{
+    padding: 35px;
+    -webkit-font-smoothing: antialiased;
+}
+
+#home .card .card-body div.row{
+    margin-bottom: 10px;
+}
+
+#home .card .card-body .card-title{
+    font-size: 50px;
+    font-weight: 400;
+    color: #02626e;
+    font-family: 'Richard';
+    -webkit-font-smoothing: antialiased;
+}
+
+#home .card .card-body .card-subtitle{
+    text-transform: uppercase;
+    font-size: 23px;
+    font-weight: 500;
+    letter-spacing: .1em;
+    color: #404040;
+    margin: 10px 0px 0px 0px;
+    line-height: 1.3em;
+    font-family: 'Richard';
+    -webkit-font-smoothing: antialiased;
+}
+
+#home .card .card-body .card-subsub{
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: .1em;
+    color: #404040;
+    margin: 3px 0 5px 0;
+    line-height: 1.3em;
+    -webkit-font-smoothing: antialiased;
+}
+
+#home .card .card-body h5{
+    text-align: left;
+    letter-spacing: 0.12em;
+    vertical-align: middle;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 19px;
+    margin-bottom: 0;
+    color: #5b4b3e;
+}
+
+#home .card .card-body p.text-body{
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .07em;
+    color: #303030;
+}
+
+#home .card .card-body .btn{
+    color: #5b4b3e;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 8px 22px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 12px 12px 12px 12px;
+}
+
+#home .card .card-footer{
+    background-color: #f3f2ee;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: .055em;;
+    -webkit-font-smoothing: antialiased;
+    padding: 14px;
+}
